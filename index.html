@@ -150,13 +150,13 @@
     </div>
     <!-- client section -->
     <div
-      class="psrent_div mt-[100px] min-h-[200px] flex mx-auto max-w-[1280px] h-[600px] gap-4 bg-gradient-to-r from-[#ff8938] to-[#ff0000] rounded-lg p-18"
+      class="psrent_div mt-[100px] min-h-[200px] flex flex-col md:flex-row mx-auto max-w-[1280px] h-[1080px] md:h-[600px] gap-4 bg-gradient-to-r from-[#ff8938] to-[#ff0000] rounded-lg p-18"
     >
       <!-- left -->
       <div
-        class="left_div h-full text-white md:w-1/2 flex items-center justify-center"
+        class="left_div h-full text-white md:w-1/2 flex items-center justify-center relative"
       >
-        <div>
+        <div class="absolute z-10">
           <h1 class="text-5xl font-bold">
             Meet Our Super <br />
             Clients
@@ -177,11 +177,14 @@
             </span>
           </button>
         </div>
+        <div class="cup absolute -bottom-18">
+          <img src="./images/bg_cup.png" alt="bg_cup" />
+        </div>
       </div>
       <!-- right -->
       <div class="right_div h-full md:w-1/2 relative">
         <div
-          class="customer_review h-[200px] w-[70%] text-black bg-white p-10 rounded-lg absolute top-[34%] left-[10%] z-10"
+          class="customer_review h-[200px] w-full sm:w-[90%] md:w-[70%] text-black bg-white p-2 md:p-10 rounded-lg absolute top-[34%] left-[10%] z-10"
         >
           <p>
             We are providing the best and suitable home insurance services for
@@ -201,7 +204,7 @@
           </div>
         </div>
         <div
-          class="customer_review h-[200px] w-[70%] text-black bg-white p-10 rounded-lg absolute top-[6%] left-[30%] opacity-20"
+          class="customer_review h-[200px] w-full sm:w-[90%] md:w-[70%] text-black bg-white p-2 md:p-10 rounded-lg absolute top-[6%] left-[30%] opacity-20"
         >
           <p>
             We are providing the best and suitable home insurance services for
@@ -218,9 +221,9 @@
           </div>
         </div>
         <div
-          class="customer_review h-[200px] w-[70%] text-black bg-white p-10 rounded-lg absolute top-[60%] left-[30%] opacity-20"
+          class="customer_review h-[200px] w-full sm:w-[90%] md:w-[70%] text-black bg-white p-2 md:p-10 rounded-lg absolute top-[60%] left-[30%] opacity-20"
         >
-          <p>
+          <p class="">
             We are providing the best and suitable home insurance services for
             the people who are interested to treatment
           </p>
@@ -234,6 +237,75 @@
             />
           </div>
         </div>
+      </div>
+    </div>
+    <!-- events -->
+    <div></div>
+    <!-- footer -->
+    <div class="footer mt-[100px] h-full md:h-[500px] md:w-full bg-slate-200">
+      <div class="footer_child mx-auto max-w-[1280px] h-full">
+        <div class="child1 pt-10 flex justify-between gap-10">
+          <img src="./images/cup.png" class="w-[62px] h-[64px]" alt="cup" />
+          <div
+            class="flex flex-col md:flex-row justify-center items-center gap-5 pr-10"
+          >
+            <span class="text-[20px]">Ready to get started?</span
+            ><button
+              class="w-[200px] h-[64px] bg-gradient-to-r from-[#ff8938] to-[#ff0000] text-white rounded-lg text-[20px]"
+            >
+              <span>Get started</span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="child2 flex justify-between mt-[100px] gap-14 flex-col md:flex-row"
+        >
+          <div class="div1 flex flex-col gap-5">
+            <h2 class="text-2xl font-bold">Quick Links</h2>
+            <span><a href="#">Home</a></span>
+            <span><a href="#">About Us</a></span>
+            <span><a href="#">Insurance</a></span>
+            <span><a href="#">Privacy Policy</a></span>
+          </div>
+          <div class="div2 flex flex-col gap-5">
+            <h2 class="text-2xl font-bold">Our Service</h2>
+            <span><a href="#">Life Insurance</a></span>
+            <span><a href="#">Car Insurance</a></span>
+            <span><a href="#">Health Insurance</a></span>
+            <span><a href="#">House Insurance</a></span>
+          </div>
+          <div class="div3 flex flex-col gap-5">
+            <h2 class="text-2xl font-bold">Help</h2>
+            <span><a href="#">FAQS</a></span>
+            <span><a href="#">CONTACT US</a></span>
+          </div>
+          <div class="div4 flex flex-col gap-5">
+            <h2 class="text-4xl pr-10 font-bold">
+              Subscribe to our <br />
+              newsletter
+            </h2>
+            <div class="flex gap-10 md:justify-between">
+              <input
+                type="email"
+                class="border-b-2 border-gray-400 focus:outline-none focus:border-red-500 px-2 py-1 w-1/2"
+                placeholder="Email Address"
+              />
+              <button
+                class="bg-gradient-to-r from-[#ff8938] to-[#ff0000] text-white w-10 h-10 rounded-full"
+              >
+                <span class="text-2xl">></span>
+              </button>
+            </div>
+            <div class="pt-10 flex gap-10">
+              <span><i class="fa-brands fa-square-facebook"></i></span>
+              <span><i class="fa-brands fa-twitter"></i></span>
+              <span><i class="fa-brands fa-square-instagram"></i></span>
+            </div>
+          </div>
+        </div>
+        <p class="text-center pt-16">
+          © 2027 UIDesign.to - All rights reserved.
+        </p>
       </div>
     </div>
   </body>
